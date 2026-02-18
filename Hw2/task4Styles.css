@@ -1,0 +1,34 @@
+.rubik-pixels-regular {
+    font-family: "Rubik Pixels", system-ui;
+}
+
+.sedgwick-ave-display-regular {
+    font-family: "Sedgwick Ave Display", cursive;
+}
+
+.dancing {
+    font-family: "Dancing Script", cursive;
+}
+.fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+}
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 25vh;
+    background-color: #c67c7c;
+}
