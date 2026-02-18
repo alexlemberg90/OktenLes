@@ -1,0 +1,28 @@
+
+header{
+    background-color: #5084f6;
+    height: 50vh;
+}
+main{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+section{
+    background-color: #3142ec;
+    width: 30vw;
+    height: 50vh;
+    margin: 2% 0;
+}
+footer{
+    background-color: #5084f6;
+    height: 60vh;
+}
+header, section, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}

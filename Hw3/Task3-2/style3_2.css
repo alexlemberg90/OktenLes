@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-family: "Arial Nova Light", sans-serif;
+}
+section h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+section p{
+    width: 80%;
+}
+.top-section{
+    background-color: pink;
+}
+.bottom-section{
+    background-color: black;
+    color: white;
+}
