@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    height: 100vh;
+    color: white;
+}
+#blue{
+ background-color: #5151f6;
+}
+#green{
+    background-color: #339133;
+}
+#red{
+    background-color: #f44545;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    width: 80%;
+}
