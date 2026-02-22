@@ -4,9 +4,9 @@ body{
 .form{
     margin: 0 auto;
     width: 25vw;
-    height: 71vh;
+    height: 75vh;
 }
-/*--------login------*/
+
 .login{
     height: 80%;
     border: 1px solid rgba(128, 128, 128, 0.4);
@@ -18,32 +18,32 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.login img{
+.login>img{
     width: 80%;
 }
 input[type="text"],
 input[type="password"]{
-    width: 78%;
-    padding: 3% 1%;
-    text-overflow: ellipsis;
+    width: 80%;
+    padding: 3%;
     margin-top: 10px;
     box-sizing: border-box;
 }
 input[type="submit"]{
-    width: 78%;
+    width: 80%;
     height: 35px;
     background-color: #68b5fa;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     border: none;
-    margin-top: 20px;
+    margin-top: 25px;
 }
-form span{
-    margin: 10px 0;
+.or{
+    margin: 20px 0;
     color: gray;
 }
-form p svg{
-    margin-bottom: -5px;
+.facebookLogo{
+    width: 15px;
+    height: 15px;
 }
 form p{
     color: #155694;
@@ -54,13 +54,13 @@ form a{
     text-decoration: none;
     margin-bottom: 15px;
 }
-/*--------registration ------------*/
+
 .registration{
-    height: 17%;
+    height: 20%;
     margin-top: 3%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid rgba(128, 128, 128, 0.4);
 }
