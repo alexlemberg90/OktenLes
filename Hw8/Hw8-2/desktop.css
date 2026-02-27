@@ -1,0 +1,24 @@
+main{
+    font-family: Inter, serif;
+    padding: 20px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.card{
+    width: 271px;
+}
+h3{
+    color: #161543;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    margin: 20px 0 10px 0;
+}
+p{
+    color: #7687A1;
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+}

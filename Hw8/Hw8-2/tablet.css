@@ -1,0 +1,11 @@
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+    main{
+        width: 720px;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .card{
+        width: 348px;
+        padding: 48px 24px;
+    }
+}
