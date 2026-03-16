@@ -180,7 +180,7 @@ if (first > second) {
 
 let y = '';
 
-if (!x) {
+if (!y) {
     y = 'default';
 }
 //
