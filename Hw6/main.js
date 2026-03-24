@@ -165,29 +165,13 @@ let coursesArray = [
 // –написати пошук всіх об’єктів, в яких в modules є sass
 //
 // –написати пошук всіх об’єктів, в яких в modules є docker
-//
-//
-//
-//
-//
-// #bolvdlhP
+const sassArr = coursesArray.filter(course =>  course.modules.includes('sass'));
+const dockerArr = coursesArray.filter(course => course.modules.includes('docker'));
+
+console.log(sassArr);
+console.log(dockerArr);
 //
 // описати колоду карт (від 6 до туза без джокерів). Більшу частину колоди можна описати з використанням циклу
-//
-// Після опису, використовуючи функції масивів:
-//
-//     – знайти піковий туз
-//
-//  – всі шістки
-//
-//  – всі червоні карти
-//
-//  – всі буби
-//
-//  – всі трефи від 9 та більше
-//
-//
-//
 // Приклад моделі об’єкту карти:
 //
 // {
@@ -199,13 +183,42 @@ let coursesArray = [
 //     color:”, // ‘red’,’black’
 //
 // }
-//
-//
-//
-//
-//
-//
-//
+
+const suits = ['spade', 'diamond', 'heart', 'club'];
+const values = ['6', '7', '8', '9', '10', 'jack', 'queen', 'king', 'ace'];
+const cards = [];
+
+for (const suit of suits) {
+    for (const value of values) {
+        const card = {cardSuit: suit, value: value};
+        if (suit === 'heart' || suit === 'diamond') {
+            card.color = 'red';
+        } else {
+            card.color = 'black';
+        }
+        cards.push(card);
+    }
+}
+
+
+// - знайти піковий туз
+console.log(cards.find(card => card.value === 'ace' && card.cardSuit === 'spade'));
+
+// - всі шістки
+console.log(cards.filter(card => card.value === '6'));
+
+// - всі червоні карти
+console.log(cards.filter(card => card.color === 'red'));
+
+
+// - всі буби
+console.log(cards.filter(card => card.cardSuit === 'diamond'));
+
+// - всі трефи від 9 та більше
+console.log(cards.filter(card => card.cardSuit === 'club' && (card.value !== '6' || card.value !== '7' || card.value !== '8' || card.value !== '9')));
+
+
+
 // #EP5I1UUzAX
 //
 // Взяти описану колоду карт, та за допомогою reduce “упакувати” всі карти по “мастях” в об’єкт
@@ -223,3 +236,31 @@ let coursesArray = [
 //     clubs:[]
 //
 // }
+const sortedCards = cards.reduce((accum, card) => {
+    switch (card.cardSuit) {
+        case 'spade':
+            accum.spades.push(card);
+            break;
+        case 'diamond':
+            accum.diamonds.push(card);
+            break;
+        case 'club':
+            accum.clubs.push(card);
+            break;
+        case 'heart':
+            accum.hearts.push(card);
+            break;
+
+    }
+
+
+    return accum;
+}, {
+    spades: [],
+    diamonds: [],
+    hearts: [],
+    clubs: []
+});
+
+
+console.log(sortedCards);
